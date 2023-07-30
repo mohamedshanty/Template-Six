@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Image/logo.png">
+    <!-- Goolge Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Main File CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="CSS/Normalize.css">
+    <title>Template Six</title>
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+        <div class="container">
+            <div class="nav">
+                <i class="i fas fa-bars toggle-menu"></i>
+                <i class="fa-solid fa-xmark cancel"></i>
+                <div class="logo">
+                    <a href="#">
+                        <h2>فرصة</h2>
+                        <img src="Image/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="index.html" class="active">الرئيسية</a></li>
+                    <li><a href="talent.html">المواهب</a></li>
+                    <li><a href="jobs.html">فرص العمل</a></li>
+                    <div class="logo-media">
+                        <img src="Image/logo.png" alt="Logo">
+                    </div>
+                    <div class="text">
+                        <p>جميع الحقوق محفوظة لدى محمد نضال الشنطي © 2023</p>
+                    </div>
+                </ul>
+            </div>
+            <div class="info">
+                <div class="create">
+                    <p>انشاء حساب</p>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="15"
+                        width="15" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M678.3 642.4c24.2-13 51.9-20.4 81.4-20.4h.1c3 0 4.4-3.6 2.2-5.6a371.67 371.67 0 0 0-103.7-65.8c-.4-.2-.8-.3-1.2-.5C719.2 505 759.6 431.7 759.6 349c0-137-110.8-248-247.5-248S264.7 212 264.7 349c0 82.7 40.4 156 102.6 201.1-.4.2-.8.3-1.2.5-44.7 18.9-84.8 46-119.3 80.6a373.42 373.42 0 0 0-80.4 119.5A373.6 373.6 0 0 0 137 888.8a8 8 0 0 0 8 8.2h59.9c4.3 0 7.9-3.5 8-7.8 2-77.2 32.9-149.5 87.6-204.3C357 628.2 432.2 597 512.2 597c56.7 0 111.1 15.7 158 45.1a8.1 8.1 0 0 0 8.1.3zM512.2 521c-45.8 0-88.9-17.9-121.4-50.4A171.2 171.2 0 0 1 340.5 349c0-45.9 17.9-89.1 50.3-121.6S466.3 177 512.2 177s88.9 17.9 121.4 50.4A171.2 171.2 0 0 1 683.9 349c0 45.9-17.9 89.1-50.3 121.6C601.1 503.1 558 521 512.2 521zM880 759h-84v-84c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v84h-84c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h84v84c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-84h84c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8z">
+                        </path>
+                    </svg>
+                </div>
+
+                <div class="login">
+                    <p>تسجيل الدخول</p>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="15"
+                        width="15" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M858.5 763.6a374 374 0 0 0-80.6-119.5 375.63 375.63 0 0 0-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 0 0-80.6 119.5A371.7 371.7 0 0 0 136 901.8a8 8 0 0 0 8 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 0 0 8-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Landing -->
+    <div class="landing">
+        <div class="text">
+            <div class="content">
+                <h2>موطن أفضل المواهب الفنية في الشرق الأوسط</h2>
+                <p>منصة فرصة هي منصة تعمل عن بُعد وتهدف إلى توفير تجربة تواصل مثالية بين الشركات والطلاب. نحن نوفر
+                    بيئة
+                    افتراضية حيث يمكن للشركات وأصحاب العمل إيجاد المواهب المناسبة والمؤهلة لمشاريعهم ووظائفهم
+                    الحالية
+                    والمستقبلية.</p>
+            </div>
+            <div class="info">
+                <div class="but1">
+                    <p>بحث عن عمل</p>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="but2">
+                    <p>ايجاد موهبة</p>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M230.406 14.656c-11.74.595-21.094 10.332-21.094 22.22 0 12.27 9.948 22.187 22.22 22.187 12.27 0 22.218-9.917 22.218-22.188 0-12.27-9.948-22.22-22.22-22.22-.382 0-.745-.018-1.124 0zm119.5 75.5c-14.066 0-25.47 11.402-25.47 25.47.002 14.066 11.404 25.468 25.47 25.468 14.067 0 25.47-11.402 25.47-25.47 0-14.066-11.403-25.468-25.47-25.468zM231.594 104.25c9.608 135.475-16.43 339.177-104.03 143.063 43.005 161.424-1.16 193.905-82.158 134.375C92.892 428.228 96.6 446 93.438 490.063h87.53c6.024-134.79 170.218-112.52 160.97 0h61.593c-2.084-64.2 19.595-109.802 79.72-169.063-61.48 49.15-138.108 86.467-125.438-41.188-48.405 139.543-115.11-25.45-126.218-175.562zM390.5 163.313c-19.997 0-36.22 16.22-36.22 36.218 0 19.998 16.223 36.22 36.22 36.22s36.188-16.222 36.188-36.22c0-19.996-16.19-36.218-36.188-36.218zM49.28 304.905c-14.065 0-25.468 11.402-25.468 25.47 0 14.066 11.403 25.468 25.47 25.468 14.066 0 25.468-11.402 25.468-25.47 0-14.066-11.402-25.468-25.47-25.468z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <a href="#articles" class="go-down">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                class="absolute text-white left-[50%] translate-x-[-50%] bottom-2 animate-bounce" height="27" width="27"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z">
+                </path>
+            </svg>
+        </a>
+    </div>
+    <!-- End Landing -->
+
+    <!-- Start Section 1 -->
+    <div class="sec-1">
+        <div class="main-title">
+            <h2>المهارات والاقسام</h2>
+            <div class="paragraph">
+                <p>تصفح المواهب حسب الأقسام</p>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="card">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="55"
+                    width="55" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c3.213 0 5.982 1.908 7.254 4.648a7.8 7.8 0 0 1-.895-.498c-.409-.258-.873-.551-1.46-.772-.669-.255-1.4-.378-2.234-.378s-1.565.123-2.234.377c-.587.223-1.051.516-1.472.781-.378.237-.703.443-1.103.594C9.41 8.921 8.926 9 8.33 9c-.595 0-1.079-.079-1.524-.248-.4-.151-.728-.358-1.106-.598-.161-.101-.34-.208-.52-.313C6.587 5.542 9.113 4 12 4zm0 16c-4.411 0-8-3.589-8-8 0-.81.123-1.59.348-2.327.094.058.185.11.283.173.411.26.876.554 1.466.776.669.255 1.399.378 2.233.378.833 0 1.564-.123 2.235-.377.587-.223 1.051-.516 1.472-.781.378-.237.703-.443 1.103-.595.445-.168.929-.247 1.525-.247s1.08.079 1.525.248c.399.15.725.356 1.114.602.409.258.873.551 1.46.773.363.138.748.229 1.153.291.049.357.083.717.083 1.086 0 4.411-3.589 8-8 8z">
+                    </path>
+                    <circle cx="8.5" cy="13.5" r="1.5"></circle>
+                    <circle cx="15.5" cy="13.5" r="1.5"></circle>
+                </svg>
+                <div class="content">
+                    <p>هذا نص افتراضي هذا نص افتراضي</p>
+                    <h3>تشكيلة واسعة من الوجهات</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="55"
+                    width="55" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20 3H4c-1.103 0-2 .897-2 2v11c0 1.103.897 2 2 2h7v2H8v2h8v-2h-3v-2h7c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM4 14V5h16l.002 9H4z">
+                    </path>
+                </svg>
+                <div class="content">
+                    <p>هذا نص افتراضي هذا نص افتراضي</p>
+                    <h3>افضل الاسعار المتاحة</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="55"
+                    width="55" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 12h6v6h-6z"></path>
+                    <path
+                        d="M19 4h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm.001 16H5V8h14l.001 12z">
+                    </path>
+                </svg>
+                <div class="content">
+                    <p>هذا نص افتراضي هذا نص افتراضي</p>
+                    <h3>عملية الحجز بسهولة</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="55"
+                    width="55" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6 22h15v-2H6.012C5.55 19.988 5 19.805 5 19s.55-.988 1.012-1H21V4c0-1.103-.897-2-2-2H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3zM5 8V5c0-.805.55-.988 1-1h13v12H5V8z">
+                    </path>
+                    <path d="M8 6h9v2H8z"></path>
+                </svg>
+                <div class="content">
+                    <p>هذا نص افتراضي هذا نص افتراضي</p>
+                    <h3>تشكيلة واسعة من الوجهات</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="55"
+                    width="55" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M2 3h2v18H2zm18 0h2v18h-2zM5 13h2v1h2v-1h2v1h2v-1h4v1h2v-4h-2v1h-4v-1h-2v1H9v-1H7v1H5zm0-9v4h2V7h8v1h2V7h2V5h-2V4h-2v1H7V4zm0 13v3h2v-1h2v1h2v-1h8v-2h-8v-1H9v1H7v-1H5z">
+                    </path>
+                </svg>
+                <div class="content">
+                    <p>هذا نص افتراضي هذا نص افتراضي</p>
+                    <h3>افضل الاسعار المتاحة</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="55"
+                    width="55" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m21.706 5.291-2.999-2.998A.996.996 0 0 0 18 2H6a.996.996 0 0 0-.707.293L2.294 5.291A.994.994 0 0 0 2 5.999V19c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V5.999a.994.994 0 0 0-.294-.708zM6.414 4h11.172l.999.999H5.415L6.414 4zM4 19V6.999h16L20.002 19H4z">
+                    </path>
+                    <path d="M15 12H9v-2H7v4h10v-4h-2z"></path>
+                </svg>
+                <div class="content">
+                    <p>هذا نص افتراضي هذا نص افتراضي</p>
+                    <h3>عملية الحجز بسهولة</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="55"
+                    width="55" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m19 12-7-5v10zM5 7v10l7-5z"></path>
+                </svg>
+                <div class="content">
+                    <p>هذا نص افتراضي هذا نص افتراضي</p>
+                    <h3>تشكيلة واسعة من الوجهات</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="55"
+                    width="55" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10c1.466 0 2.961-.371 4.442-1.104l-.885-1.793C14.353 19.698 13.156 20 12 20c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8v1c0 .692-.313 2-1.5 2-1.396 0-1.494-1.819-1.5-2V8h-2v.025A4.954 4.954 0 0 0 12 7c-2.757 0-5 2.243-5 5s2.243 5 5 5c1.45 0 2.748-.631 3.662-1.621.524.89 1.408 1.621 2.838 1.621 2.273 0 3.5-2.061 3.5-4v-1c0-5.514-4.486-10-10-10zm0 13c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3z">
+                    </path>
+                </svg>
+                <div class="content">
+                    <p>هذا نص افتراضي هذا نص افتراضي</p>
+                    <h3>افضل الاسعار المتاحة</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="55"
+                    width="55" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18.404 2.998c-.757-.754-2.077-.751-2.828.005l-1.784 1.791L11.586 7H7a.998.998 0 0 0-.939.658l-4 11c-.133.365-.042.774.232 1.049l2 2a.997.997 0 0 0 1.049.232l11-4A.998.998 0 0 0 17 17v-4.586l2.207-2.207v-.001h.001L21 8.409c.378-.378.586-.881.585-1.415 0-.535-.209-1.038-.588-1.415l-2.593-2.581zm-3.111 8.295A.996.996 0 0 0 15 12v4.3l-9.249 3.363 4.671-4.671c.026.001.052.008.078.008A1.5 1.5 0 1 0 9 13.5c0 .026.007.052.008.078l-4.671 4.671L7.7 9H12c.266 0 .52-.105.707-.293L14.5 6.914 17.086 9.5l-1.793 1.793zm3.206-3.208-2.586-2.586 1.079-1.084 2.593 2.581-1.086 1.089z">
+                    </path>
+                </svg>
+                <div class="content">
+                    <p>هذا نص افتراضي هذا نص افتراضي</p>
+                    <h3>عملية الحجز بسهولة</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="55"
+                    width="55" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9 18h3v-2H9c-1.654 0-3-1.346-3-3s1.346-3 3-3h6v3l5-4-5-4v3H9c-2.757 0-5 2.243-5 5s2.243 5 5 5z">
+                    </path>
+                </svg>
+                <div class="content">
+                    <p>هذا نص افتراضي هذا نص افتراضي</p>
+                    <h3>عملية الحجز بسهولة</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Section 1 -->
+
+    <!-- Start Section 2 -->
+    <div class="sec-2">
+        <div class="main-title">
+            <h2>افضل الشركات</h2>
+            <p>تعرف على افضل الشركات في الشرق الاوسط</p>
+        </div>
+        <div class="container">
+
+            <div class="card">
+                <img src="image/sec2-1.jpeg" alt="">
+                <div class="content">
+                    <p>تكنولوجيا المعلومات</p>
+                    <h3>شركة المستقبل</h3>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                        class="text-[#FFC312]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                        </path>
+                    </svg>
+                    <span>4.5</span>
+                    <span>(500 تقييم)</span>
+                    <p>موقعنا هو منصة تعمل عن بُعد وتهدف إلى توفير تجربة تواصل مثالية بين الشركات والطلاب. نحن نوفر بيئة
+                        افتراضية حيث يمكن للشركات وأصحاب العمل إيجاد المواهب المناسبة والمؤهلة لمشاريعهم ووظائفهم
+                        الحالية والمستقبلية.
+                    </p>
+                </div>
+                <div class="info">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="17"
+                        width="17" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z">
+                        </path>
+                    </svg>
+                    <span>+120</span>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="17"
+                        width="17" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 14c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z">
+                        </path>
+                        <path
+                            d="M11.42 21.814a.998.998 0 0 0 1.16 0C12.884 21.599 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.995c-.029 6.445 7.116 11.604 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.005.021 4.438-4.388 8.423-6 9.73-1.611-1.308-6.021-5.294-6-9.735 0-3.309 2.691-6 6-6z">
+                        </path>
+                    </svg>
+                    <p>غزة، فلسطين</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/sec2-2.jpeg" alt="">
+                <div class="content">
+                    <p>تكنولوجيا المعلومات</p>
+                    <h3>شركة المستقبل</h3>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                        class="text-[#FFC312]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                        </path>
+                    </svg>
+                    <span>4.5</span>
+                    <span>(500 تقييم)</span>
+                    <p>موقعنا هو منصة تعمل عن بُعد وتهدف إلى توفير تجربة تواصل مثالية بين الشركات والطلاب. نحن نوفر بيئة
+                        افتراضية حيث يمكن للشركات وأصحاب العمل إيجاد المواهب المناسبة والمؤهلة لمشاريعهم ووظائفهم
+                        الحالية والمستقبلية.
+                    </p>
+                </div>
+                <div class="info">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="17"
+                        width="17" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z">
+                        </path>
+                    </svg>
+                    <span>+120</span>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="17"
+                        width="17" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 14c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z">
+                        </path>
+                        <path
+                            d="M11.42 21.814a.998.998 0 0 0 1.16 0C12.884 21.599 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.995c-.029 6.445 7.116 11.604 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.005.021 4.438-4.388 8.423-6 9.73-1.611-1.308-6.021-5.294-6-9.735 0-3.309 2.691-6 6-6z">
+                        </path>
+                    </svg>
+                    <p>غزة، فلسطين</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/sec2-3.jpeg" alt="">
+                <div class="content">
+                    <p>تكنولوجيا المعلومات</p>
+                    <h3>شركة المستقبل</h3>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                        class="text-[#FFC312]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                        </path>
+                    </svg>
+                    <span>4.5</span>
+                    <span>(500 تقييم)</span>
+                    <p>موقعنا هو منصة تعمل عن بُعد وتهدف إلى توفير تجربة تواصل مثالية بين الشركات والطلاب. نحن نوفر بيئة
+                        افتراضية حيث يمكن للشركات وأصحاب العمل إيجاد المواهب المناسبة والمؤهلة لمشاريعهم ووظائفهم
+                        الحالية والمستقبلية.
+                    </p>
+                </div>
+                <div class="info">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="17"
+                        width="17" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z">
+                        </path>
+                    </svg>
+                    <span>+120</span>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="17"
+                        width="17" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 14c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z">
+                        </path>
+                        <path
+                            d="M11.42 21.814a.998.998 0 0 0 1.16 0C12.884 21.599 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.995c-.029 6.445 7.116 11.604 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.005.021 4.438-4.388 8.423-6 9.73-1.611-1.308-6.021-5.294-6-9.735 0-3.309 2.691-6 6-6z">
+                        </path>
+                    </svg>
+                    <p>غزة، فلسطين</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/sec2-4.jpeg" alt="">
+                <div class="content">
+                    <p>تكنولوجيا المعلومات</p>
+                    <h3>شركة المستقبل</h3>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                        class="text-[#FFC312]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                        </path>
+                    </svg>
+                    <span>4.5</span>
+                    <span>(500 تقييم)</span>
+                    <p>موقعنا هو منصة تعمل عن بُعد وتهدف إلى توفير تجربة تواصل مثالية بين الشركات والطلاب. نحن نوفر بيئة
+                        افتراضية حيث يمكن للشركات وأصحاب العمل إيجاد المواهب المناسبة والمؤهلة لمشاريعهم ووظائفهم
+                        الحالية والمستقبلية.
+                    </p>
+                </div>
+                <div class="info">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="17"
+                        width="17" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z">
+                        </path>
+                    </svg>
+                    <span>+120</span>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="17"
+                        width="17" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 14c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z">
+                        </path>
+                        <path
+                            d="M11.42 21.814a.998.998 0 0 0 1.16 0C12.884 21.599 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.995c-.029 6.445 7.116 11.604 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.005.021 4.438-4.388 8.423-6 9.73-1.611-1.308-6.021-5.294-6-9.735 0-3.309 2.691-6 6-6z">
+                        </path>
+                    </svg>
+                    <p>غزة، فلسطين</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Section 2 -->
+    <!-- Start Section 3 -->
+    <div class="sec-3">
+        <div class="main-title">
+            <h2>المواهب الاكثر روجا</h2>
+            <p>يمكنك العثور على المواهب الاكثر شهرة في الشرق الاوسط</p>
+        </div>
+        <div class="container">
+
+            <div class="card">
+                <img src="image/user.png" alt="User">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    class="absolute top-0 left-0 text-primary bg-white rounded-full p-[1px]" height="22" width="22"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z">
+                    </path>
+                </svg>
+                <div class="content">
+                    <p>عبد الله سليم</p>
+                    <p>تصميم جرافك</p>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                        class="text-[#FFC312] first" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                        </path>
+                    </svg>
+                    <span>4.5</span>
+                    <span>(500 تقييم)</span>
+                    <div class="college">
+                        <div class="col1">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                height="12" width="12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z">
+                                </path>
+                            </svg>
+                            <span>جامعة الازهر</span>
+                        </div>
+                        <div class="col2">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                height="12" width="12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z">
+                                </path>
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+                            </svg>
+                            <span>دوام كامل</span>
+                        </div>
+                    </div>
+                    <div class="view">
+                        <span>عرض الملف الشخصي</span>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="20"
+                            width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                            </path>
+                            <path
+                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/user.png" alt="User">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    class="absolute top-0 left-0 text-primary bg-white rounded-full p-[1px]" height="22" width="22"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z">
+                    </path>
+                </svg>
+                <div class="content">
+                    <p>عبد الله سليم</p>
+                    <p>تصميم جرافك</p>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                        class="text-[#FFC312] first" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                        </path>
+                    </svg>
+                    <span>4.5</span>
+                    <span>(500 تقييم)</span>
+                    <div class="college">
+                        <div class="col1">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                height="12" width="12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z">
+                                </path>
+                            </svg>
+                            <span>جامعة الازهر</span>
+                        </div>
+                        <div class="col2">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                height="12" width="12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z">
+                                </path>
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+                            </svg>
+                            <span>دوام كامل</span>
+                        </div>
+                    </div>
+                    <div class="view">
+                        <span>عرض الملف الشخصي</span>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="20"
+                            width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                            </path>
+                            <path
+                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/user.png" alt="User">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    class="absolute top-0 left-0 text-primary bg-white rounded-full p-[1px]" height="22" width="22"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z">
+                    </path>
+                </svg>
+                <div class="content">
+                    <p>عبد الله سليم</p>
+                    <p>تصميم جرافك</p>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                        class="text-[#FFC312] first" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                        </path>
+                    </svg>
+                    <span>4.5</span>
+                    <span>(500 تقييم)</span>
+                    <div class="college">
+                        <div class="col1">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                height="12" width="12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z">
+                                </path>
+                            </svg>
+                            <span>جامعة الازهر</span>
+                        </div>
+                        <div class="col2">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                height="12" width="12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z">
+                                </path>
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+                            </svg>
+                            <span>دوام كامل</span>
+                        </div>
+                    </div>
+                    <div class="view">
+                        <span>عرض الملف الشخصي</span>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="20"
+                            width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                            </path>
+                            <path
+                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/user.png" alt="User">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    class="absolute top-0 left-0 text-primary bg-white rounded-full p-[1px]" height="22" width="22"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z">
+                    </path>
+                </svg>
+                <div class="content">
+                    <p>عبد الله سليم</p>
+                    <p>تصميم جرافك</p>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                        class="text-[#FFC312] first" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                        </path>
+                    </svg>
+                    <span>4.5</span>
+                    <span>(500 تقييم)</span>
+                    <div class="college">
+                        <div class="col1">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                height="12" width="12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z">
+                                </path>
+                            </svg>
+                            <span>جامعة الازهر</span>
+                        </div>
+                        <div class="col2">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                height="12" width="12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z">
+                                </path>
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+                            </svg>
+                            <span>دوام كامل</span>
+                        </div>
+                    </div>
+                    <div class="view">
+                        <span>عرض الملف الشخصي</span>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="20"
+                            width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                            </path>
+                            <path
+                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/user.png" alt="User">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    class="absolute top-0 left-0 text-primary bg-white rounded-full p-[1px]" height="22" width="22"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z">
+                    </path>
+                </svg>
+                <div class="content">
+                    <p>عبد الله سليم</p>
+                    <p>تصميم جرافك</p>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                        class="text-[#FFC312] first" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                        </path>
+                    </svg>
+                    <span>4.5</span>
+                    <span>(500 تقييم)</span>
+                    <div class="college">
+                        <div class="col1">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                height="12" width="12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z">
+                                </path>
+                            </svg>
+                            <span>جامعة الازهر</span>
+                        </div>
+                        <div class="col2">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                height="12" width="12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z">
+                                </path>
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+                            </svg>
+                            <span>دوام كامل</span>
+                        </div>
+                    </div>
+                    <div class="view">
+                        <span>عرض الملف الشخصي</span>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="20"
+                            width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                            </path>
+                            <path
+                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/user.png" alt="User">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    class="absolute top-0 left-0 text-primary bg-white rounded-full p-[1px]" height="22" width="22"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z">
+                    </path>
+                </svg>
+                <div class="content">
+                    <p>عبد الله سليم</p>
+                    <p>تصميم جرافك</p>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                        class="text-[#FFC312] first" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                        </path>
+                    </svg>
+                    <span>4.5</span>
+                    <span>(500 تقييم)</span>
+                    <div class="college">
+                        <div class="col1">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                height="12" width="12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z">
+                                </path>
+                            </svg>
+                            <span>جامعة الازهر</span>
+                        </div>
+                        <div class="col2">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                height="12" width="12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z">
+                                </path>
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+                            </svg>
+                            <span>دوام كامل</span>
+                        </div>
+                    </div>
+                    <div class="view">
+                        <span>عرض الملف الشخصي</span>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="20"
+                            width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z">
+                            </path>
+                            <path
+                                d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="all">
+            <p>عرض الكل</p>
+            <a href="#" class="go-down">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="30"
+                    width="30" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M216.4 163.7c5.1 5 5.1 13.3.1 18.4L155.8 243h231.3c7.1 0 12.9 5.8 12.9 13s-5.8 13-12.9 13H155.8l60.8 60.9c5 5.1 4.9 13.3-.1 18.4-5.1 5-13.2 5-18.3-.1l-82.4-83c-1.1-1.2-2-2.5-2.7-4.1-.7-1.6-1-3.3-1-5 0-3.4 1.3-6.6 3.7-9.1l82.4-83c4.9-5.2 13.1-5.3 18.2-.3z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <!-- End Section 3 -->
+
+    <!-- Start Footer -->
+    <div class="sec-4">
+        <div class="main">
+            <div class="main-title">
+                <h2>اشترك معنا الان</h2>
+                <p>نوصيك بالاشتراك عن طريق تسجيل بريدك الالكتروني ادناه للحصول على تحديثات يومية</p>
+            </div>
+            <div class="sub">
+                <form action="#">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="22"
+                        width="22" xmlns="http://www.w3.org/2000/svg" class="first">
+                        <path
+                            d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z">
+                        </path>
+                        <path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path>
+                    </svg>
+                    <input type="text" name="email" id="email" placeholder="example@gmail.com">
+                    <span class="subs">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round" height="22" width="22"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                        <p>اشترك الان</p>
+                    </span>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="cat">
+                <div class="info">
+                    <div class="image">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                            height="25" width="25" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <h3>الاسم</h3>
+                        <p>محمد نضال الشنطي</p>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="image">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512"
+                            height="25" width="25" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M288 0c-69.59 0-126 56.41-126 126 0 56.26 82.35 158.8 113.9 196.02 6.39 7.54 17.82 7.54 24.2 0C331.65 284.8 414 182.26 414 126 414 56.41 357.59 0 288 0zm0 168c-23.2 0-42-18.8-42-42s18.8-42 42-42 42 18.8 42 42-18.8 42-42 42zM20.12 215.95A32.006 32.006 0 0 0 0 245.66v250.32c0 11.32 11.43 19.06 21.94 14.86L160 448V214.92c-8.84-15.98-16.07-31.54-21.25-46.42L20.12 215.95zM288 359.67c-14.07 0-27.38-6.18-36.51-16.96-19.66-23.2-40.57-49.62-59.49-76.72v182l192 64V266c-18.92 27.09-39.82 53.52-59.49 76.72-9.13 10.77-22.44 16.95-36.51 16.95zm266.06-198.51L416 224v288l139.88-55.95A31.996 31.996 0 0 0 576 426.34V176.02c0-11.32-11.43-19.06-21.94-14.86z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <h3>العنوان</h3>
+                        <p>السامر، غزة ، فلسطين</p>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="image">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                            height="25" width="25" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <h3>البريد الالكتروني</h3>
+                        <p>mohamed151salem@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="image">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                            height="25" width="25" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <h3>رقم الجوال</h3>
+                        <p>+972-59-786-7603</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="social">
+                <div class="logo">
+                    <img src="image/logo.png" alt="logo">
+                    <p>فرصة</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="last">
+                    <p>جميع الحقوق محفوظة لدى محمد الشنطي 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+
+</body>
+
+</html>
